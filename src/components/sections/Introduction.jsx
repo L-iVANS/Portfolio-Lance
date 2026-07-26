@@ -1,5 +1,6 @@
 import { PROFILE } from '../../data'
 import { Divider, Section } from '../ui'
+import photo from '../../assets/Lance_1x1.jpg'
 
 function ContactItem({ label, value, href }) {
   return (
@@ -36,7 +37,7 @@ export function Introduction() {
         </div>
 
         <div className="intro__avatar">
-          <img src="..\public\Lance_1x1.jpg" alt={PROFILE.name} />
+          <img src={photo} alt={PROFILE.name} />
         </div>
       </div>
 
