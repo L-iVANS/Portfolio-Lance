@@ -36,7 +36,7 @@ export function Introduction() {
         </div>
 
         <div className="intro__avatar">
-          <img src="..\src\assets\Lance_1x1.jpg" alt={PROFILE.name} />
+          <img src="..\public\Lance_1x1.jpg" alt={PROFILE.name} />
         </div>
       </div>
 
