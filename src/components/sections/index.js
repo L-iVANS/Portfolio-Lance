@@ -1,0 +1,7 @@
+export { Introduction } from './Introduction'
+export { Projects } from './Projects'
+export { Experience } from './Experience'
+export { TechStack } from './TechStack'
+export { Certifications } from './Certifications'
+export { Recommendations } from './Recommendations'
+export { Github } from './Github'

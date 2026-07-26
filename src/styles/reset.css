@@ -1,24 +1,3 @@
-/* ── Design tokens ── */
-
-:root {
-  /* Colors */
-  --color-white: #ffffff;
-  --color-off-white: #fafafa;
-  --color-border: #e5e5e5;
-  --color-light-gray: #a3a3a3;
-  --color-mid-gray: #737373;
-  --color-charcoal: #404040;
-  --color-near-black: #0a0a0a;
-
-  /* Typography */
-  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, 'SF Mono', Menlo,
-    Consolas, 'Liberation Mono', monospace;
-}
-
-/* ── Reset ── */
-
 *,
 *::before,
 *::after {
@@ -57,7 +36,14 @@ svg {
   max-width: 100%;
 }
 
-button,
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
 input,
 textarea,
 select {
@@ -70,6 +56,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -78,9 +68,9 @@ h5,
 h6,
 p {
   overflow-wrap: break-word;
+  font-weight: inherit;
 }
 
-/* Visible keyboard focus (buttons here have border:none inline) */
 :focus-visible {
   outline: 2px solid var(--color-mid-gray);
   outline-offset: 2px;
